@@ -1,0 +1,46 @@
+# Dependencies and generated files
+node_modules/
+dist/
+build/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+coverage/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local credentials, financial data, and session material
+.env
+.env.*
+!.env.example
+secrets/
+private/
+data/
+*.pem
+*.key
+*.crt
+*.cer
+*.pfx
+*.p12
+*.dpapi
+*token*.json
+*session*.json
+schwab.json
+credentials*.json
+*.sqlite*
+*.db
+*.csv
+*.log
+*.tmp
+
+# Local editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

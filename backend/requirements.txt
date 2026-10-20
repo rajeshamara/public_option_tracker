@@ -1,0 +1,6 @@
+fastapi>=0.115,<1
+uvicorn>=0.36,<1
+httpx>=0.28,<1
+pytest>=8,<10
+cryptography>=44,<48
+tzdata>=2025.1
