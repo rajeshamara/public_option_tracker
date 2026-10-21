@@ -6,7 +6,7 @@ OptionTracker organizes open option contracts by expiration, position direction,
 
 The application retrieves quotes and positions through the Schwab API. It exposes no order placement, cancellation, or exercise operations. A credential-free demo uses entirely synthetic positions and prices, making the application easy to explore without a brokerage account.
 
-> **Public demo scope:** This repository is a curated public demo of the privately maintained OptionTracker project. It includes selected application code and synthetic examples to showcase the architecture, interface, and engineering approach. Private configuration, account data, operational details, and internal development materials are intentionally excluded. This repository is intended for portfolio review and demonstration, and is not a complete distribution of the private project.
+> **Public edition:** This repository includes selected OptionTracker application code, a synthetic-data demo, tests, and build configuration. Brokerage credentials, account data, runtime state, and private deployment configuration are excluded. It is a curated subset of the privately maintained project.
 
 Live brokerage use requires separate configuration and validation.
 
