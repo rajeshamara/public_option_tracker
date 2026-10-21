@@ -6,9 +6,19 @@ OptionTracker organizes open option contracts by expiration, position direction,
 
 The application retrieves quotes and positions through the Schwab API. It exposes no order placement, cancellation, or exercise operations. A credential-free demo uses entirely synthetic positions and prices, making the application easy to explore without a brokerage account.
 
-> **Public edition:** This repository includes selected OptionTracker application code, a synthetic-data demo, tests, and build configuration. Brokerage credentials, account data, runtime state, and private deployment configuration are excluded. It is a curated subset of the privately maintained project.
+> **Public edition:** This repository includes selected OptionTracker application code, a dashboard screenshot, a synthetic-data demo, tests, and build configuration. Brokerage credentials, raw account exports, runtime state, and private deployment configuration are excluded. It is a curated subset of the privately maintained project.
 
 Live brokerage use requires separate configuration and validation.
+
+## Dashboard preview
+
+The All Positions view brings expiration summaries, contract filters, moneyness, near-strike highlighting, and automatic refresh controls into one screen.
+
+![OptionTracker All Positions dashboard with expiration summaries, position filters, and near-strike highlighting](assets/dashboard.png)
+
+This sample capture shows the connected dashboard with account aliases. Displayed positions, prices, and timestamps reflect the captured screen; the optional demo below uses synthetic data.
+
+[Open the dashboard screenshot at full size](assets/dashboard.png).
 
 ## Optional: run the demo
 
@@ -169,4 +179,4 @@ OptionTracker supports monitoring and review. It is not a trading system or fina
 
 The 4 p.m. Eastern expiration cutoff is a display convention, not exchange-specific settlement logic. The Expired view includes only legs present in the current position response; it is not a historical archive. Adjusted option deliverables, spread reconstruction, Greeks, P&L, and transaction history are outside the current scope. Browser throttling can delay refreshes, and source quotes may be delayed or stale.
 
-The public version includes application source, synthetic examples, tests, and build configuration. Local credentials, personal portfolio snapshots, runtime logs, generated certificates, installed dependencies, and private development history are excluded.
+The public version includes application source, the selected dashboard screenshot, synthetic examples, tests, and build configuration. Local credentials, raw portfolio exports, runtime logs, generated certificates, installed dependencies, and private development history are excluded.
